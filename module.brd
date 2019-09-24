@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -170,6 +170,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:d7jDZHwrQ7-lR3bwDhQsGg" pcbguid="c954c2a9-37b4-4584-a4ef-c270cc6e10b1" lastpulledtime="" lastsyncedchangeguid="12607501-1707-eabb-6a5a-15d45b8e926b"/>
 <plain>
 <wire x1="4" y1="0" x2="76" y2="0" width="0" layer="20"/>
 <wire x1="80" y1="4" x2="80" y2="36" width="0" layer="20"/>
@@ -199,36 +200,6 @@
 <circle x="56" y="36" radius="3" width="0" layer="42"/>
 </plain>
 <libraries>
-<library name="parts-schurter" urn="urn:adsk.eagle:library:7633142">
-<packages>
-<package name="IEC-C6" urn="urn:adsk.eagle:footprint:7633143/1" library_version="2">
-<pad name="P$1" x="-6.85" y="0" drill="2"/>
-<pad name="P$2" x="0" y="0" drill="2"/>
-<pad name="P$3" x="6.85" y="0" drill="2"/>
-<wire x1="-10.3" y1="-3" x2="10.3" y2="-3" width="0.127" layer="51"/>
-<wire x1="-10.3" y1="-3" x2="-10.3" y2="14" width="0.127" layer="51"/>
-<wire x1="10.3" y1="-3" x2="10.3" y2="14" width="0.127" layer="51"/>
-<wire x1="-19.5" y1="14" x2="19.5" y2="14" width="0.127" layer="51"/>
-<wire x1="-19.5" y1="14" x2="-19.5" y2="16" width="0.127" layer="51"/>
-<wire x1="-19.5" y1="16" x2="19.5" y2="16" width="0.127" layer="51"/>
-<wire x1="19.5" y1="16" x2="19.5" y2="14" width="0.127" layer="51"/>
-<wire x1="-10.6" y1="12.8" x2="-10.6" y2="-3.4" width="0.4" layer="21"/>
-<wire x1="-10.6" y1="-3.4" x2="-9.8" y2="-3.4" width="0.4" layer="21"/>
-<wire x1="-9.8" y1="-3.4" x2="10.6" y2="-3.4" width="0.4" layer="21"/>
-<wire x1="10.6" y1="-3.4" x2="10.6" y2="12.8" width="0.4" layer="21"/>
-<text x="-9" y="1.8" size="2" layer="21" font="vector" ratio="15">N</text>
-<text x="-2.4" y="1.8" size="2" layer="21" font="vector" ratio="15">G</text>
-<text x="4.4" y="1.8" size="2" layer="21" font="vector" ratio="15">L</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="IEC-C6" urn="urn:adsk.eagle:package:7633145/2" type="model" library_version="2">
-<packageinstances>
-<packageinstance name="IEC-C6"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="parts-passives" urn="urn:adsk.eagle:library:8154151">
 <packages>
 <package name="MA18-2-SMT" urn="urn:adsk.eagle:footprint:11188449/3" library_version="46">
@@ -1792,6 +1763,97 @@ grid 10.2 mm, outline 6.4 x 13.3 mm</description>
 </package3d>
 </packages3d>
 </library>
+<library name="parts-wurth" urn="urn:adsk.eagle:library:12750488">
+<packages>
+<package name="EE20/9/11_THT_H_14PIN_EXT_(5443)" urn="urn:adsk.eagle:footprint:12750561/1" library_version="5">
+<description>Package Style: EE20/9/11&lt;br&gt;Mounting: THT&lt;br&gt;Pins: 14&lt;br&gt;Bobbin: 070-5443</description>
+<wire x1="-12.4968" y1="11.0998" x2="12.4968" y2="11.0998" width="0.127" layer="21"/>
+<wire x1="-12.4968" y1="-11.0998" x2="12.4968" y2="-11.0998" width="0.127" layer="21"/>
+<wire x1="-12.4968" y1="11.0998" x2="-12.4968" y2="-11.0998" width="0.127" layer="21"/>
+<wire x1="12.4968" y1="11.0998" x2="12.4968" y2="-11.0998" width="0.127" layer="21"/>
+<circle x="-7.3533" y="7.3787" radius="0.6604" width="0" layer="21"/>
+<text x="-11.8618" y="11.7348" size="1.778" layer="25">&gt;NAME</text>
+<text x="-11.8618" y="-13.0048" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-13.7668" y="6.7183" size="1.27" layer="51">1</text>
+<text x="-13.7668" y="-8.0391" size="1.27" layer="51">6</text>
+<text x="13.7668" y="-9.1948" size="1.27" layer="51">7</text>
+<text x="13.7668" y="7.874" size="1.27" layer="51">14</text>
+<pad name="1" x="-9.9949" y="7.3787" drill="1.3208" shape="square"/>
+<pad name="2" x="-9.9949" y="4.9403" drill="1.3208"/>
+<pad name="3" x="-9.9949" y="2.5019" drill="1.3208"/>
+<pad name="4" x="-9.9949" y="-2.5019" drill="1.3208"/>
+<pad name="5" x="-9.9949" y="-4.9403" drill="1.3208"/>
+<pad name="6" x="-9.9949" y="-7.3787" drill="1.3208"/>
+<pad name="14" x="9.9949" y="8.5344" drill="1.3208"/>
+<pad name="13" x="9.9949" y="6.096" drill="1.3208"/>
+<pad name="12" x="9.9949" y="3.6576" drill="1.3208"/>
+<pad name="11" x="9.9949" y="1.2192" drill="1.3208"/>
+<pad name="10" x="9.9949" y="-1.2192" drill="1.3208"/>
+<pad name="9" x="9.9949" y="-3.6576" drill="1.3208"/>
+<pad name="8" x="9.9949" y="-6.096" drill="1.3208"/>
+<pad name="7" x="9.9949" y="-8.5344" drill="1.3208"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="EE20/9/11_THT_H_14PIN_EXT_(5443)" urn="urn:adsk.eagle:package:12750564/2" type="model" library_version="5">
+<description>Package Style: EE20/9/11&lt;br&gt;Mounting: THT&lt;br&gt;Pins: 14&lt;br&gt;Bobbin: 070-5443</description>
+<packageinstances>
+<packageinstance name="EE20/9/11_THT_H_14PIN_EXT_(5443)"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="con-wago-508" urn="urn:adsk.eagle:library:196">
+<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
+Grid 5.08 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="W237-133" urn="urn:adsk.eagle:footprint:10713/1" library_version="2">
+<description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
+<wire x1="-6.0706" y1="-1.651" x2="-4.064" y2="0.3556" width="0.254" layer="51"/>
+<wire x1="-0.9144" y1="-1.6764" x2="0.9906" y2="0.3556" width="0.254" layer="51"/>
+<wire x1="4.1656" y1="-1.6002" x2="5.969" y2="0.3556" width="0.254" layer="51"/>
+<wire x1="-7.62" y1="-4.826" x2="7.62" y2="-4.826" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="4.191" x2="7.62" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="4.191" x2="-7.62" y2="4.191" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-4.826" x2="-7.62" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="4.191" x2="-7.62" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="4.445" x2="7.62" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="4.191" x2="7.62" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-2.413" x2="-5.969" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="-5.969" y1="-2.413" x2="-4.191" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="-4.191" y1="-2.413" x2="-0.889" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="-2.413" x2="4.191" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="5.969" y1="-2.413" x2="7.62" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-2.413" x2="-7.62" y2="4.191" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-2.413" x2="7.62" y2="-4.826" width="0.1524" layer="21"/>
+<wire x1="-0.889" y1="-2.413" x2="0.889" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="4.191" y1="-2.413" x2="5.969" y2="-2.413" width="0.1524" layer="51"/>
+<circle x="-5.08" y="-0.635" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="5.08" y="-0.635" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="-5.08" y="2.8448" radius="0.508" width="0.1524" layer="21"/>
+<circle x="5.08" y="2.8448" radius="0.508" width="0.1524" layer="21"/>
+<circle x="0" y="-0.635" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="0" y="2.8448" radius="0.508" width="0.1524" layer="21"/>
+<pad name="1" x="-5.08" y="-0.635" drill="1.1938" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-0.635" drill="1.1938" shape="long" rot="R90"/>
+<pad name="3" x="5.08" y="-0.635" drill="1.1938" shape="long" rot="R90"/>
+<text x="-6.985" y="1.27" size="1.27" layer="51" ratio="10">1</text>
+<text x="-1.8542" y="1.2192" size="1.27" layer="51" ratio="10">2</text>
+<text x="3.2258" y="1.27" size="1.27" layer="51" ratio="10">3</text>
+<text x="-6.604" y="-4.318" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-6.985" y="-6.858" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="W237-133" urn="urn:adsk.eagle:package:10737/1" type="box" library_version="2">
+<description>WAGO SREW CLAMP</description>
+<packageinstances>
+<packageinstance name="W237-133"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1989,59 +2051,79 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CON1" library="parts-schurter" library_urn="urn:adsk.eagle:library:7633142" package="IEC-C6" package3d_urn="urn:adsk.eagle:package:7633145/2" value="" x="13" y="20" smashed="yes" rot="R90"/>
 <element name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" package="MA18-2-SMT" package3d_urn="urn:adsk.eagle:package:11188450/3" value="" x="30" y="36" smashed="yes">
 <attribute name="NAME" x="52.46" y="32.241" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="F1" library="parts-profuse" library_urn="urn:adsk.eagle:library:7644690" package="ZH8X2" package3d_urn="urn:adsk.eagle:package:7644693/2" value="1A/250V" x="19" y="4" smashed="yes">
 <attribute name="NAME" x="8.2" y="0.2" size="1.6" layer="21" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R1" library="parts-srpassives" library_urn="urn:adsk.eagle:library:8336808" package="S05K250" package3d_urn="urn:adsk.eagle:package:12598914/2" value="VAR7-250" x="24" y="20" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.54" y="17.079" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="0" x="24" y="20" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R1" library="parts-srpassives" library_urn="urn:adsk.eagle:library:8336808" package="S05K250" package3d_urn="urn:adsk.eagle:package:12598914/2" value="VAR7-250" x="22" y="25" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.54" y="22.079" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="22" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C102-064X133" package3d_urn="urn:adsk.eagle:package:23653/1" value="0.1uF/275Vac" x="24" y="28" smashed="yes" rot="R180">
-<attribute name="NAME" x="30.096" y="24.571" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="0" x="24" y="28" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="24" y="28" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="25.524" y="30.032" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C102-064X133" package3d_urn="urn:adsk.eagle:package:23653/1" value="0.1uF/275Vac" x="24" y="18" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.096" y="14.571" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="24" y="18" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="24" y="18" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="25.524" y="20.032" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C102-064X133" package3d_urn="urn:adsk.eagle:package:23653/1" value="0.1uF/275Vac" x="24" y="13" smashed="yes" rot="R180">
-<attribute name="NAME" x="30.096" y="9.571" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="POPULARITY" value="0" x="24" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="24" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="25.524" y="15.032" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C102-064X133" package3d_urn="urn:adsk.eagle:package:23653/1" value="0.1uF/275Vac" x="24" y="11" smashed="yes" rot="R180">
+<attribute name="NAME" x="30.096" y="7.571" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="24" y="11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="24" y="11" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="25.524" y="13.032" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="L1" library="parts-kemet" library_urn="urn:adsk.eagle:library:12632111" package="SSRH7HS-M" package3d_urn="urn:adsk.eagle:package:12632155/4" value="" x="39" y="17" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.5" y="7" size="1.27" layer="25" rot="R180"/>
+<element name="L1" library="parts-kemet" library_urn="urn:adsk.eagle:library:12632111" package="SSRH7HS-M" package3d_urn="urn:adsk.eagle:package:12632155/4" value="" x="39" y="10" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.5" y="0" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="T1" library="parts-wurth" library_urn="urn:adsk.eagle:library:12750488" package="EE20/9/11_THT_H_14PIN_EXT_(5443)" package3d_urn="urn:adsk.eagle:package:12750564/2" value="750871110" x="61" y="19" smashed="yes">
+<attribute name="AVAILABILITY" value="Unavailable" x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Trans Off Line Power St Viper28 " x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Wurth Electronics" x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="750871110" x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="49.1382" y="30.7348" size="1.778" layer="25"/>
+<attribute name="PACKAGE" value="MSOP-10 Würth Elektronik" x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="61" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="49.1382" y="5.9952" size="1.27" layer="27"/>
+</element>
+<element name="X1" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-133" package3d_urn="urn:adsk.eagle:package:10737/1" value="" x="5" y="20" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="5" y="20" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="5" y="20" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-1.858" y="26.985" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="OC_FARNELL" value="unknown" x="5" y="20" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="5" y="20" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULARITY" value="3" x="5" y="20" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="0.682" y="26.604" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 </elements>
 <signals>
 <signal name="N$1" class="1">
-<contactref element="CON1" pad="P$1"/>
 <contactref element="F1" pad="1A"/>
 <contactref element="F1" pad="1"/>
-<wire x1="13" y1="13.15" x2="8.5" y2="8.65" width="1" layer="1"/>
-<wire x1="8.5" y1="8.65" x2="8.5" y2="4" width="1" layer="1"/>
 <wire x1="8.5" y1="4" x2="15.5" y2="4" width="1" layer="1"/>
+<contactref element="X1" pad="1"/>
+<wire x1="8.5" y1="4" x2="4.365" y2="25.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EARTH" class="1">
-<contactref element="CON1" pad="P$2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="13" y1="20" x2="18.92" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="18.92" y1="13" x2="13" y2="20" width="0" layer="19" extent="1-1"/>
+<wire x1="16.92" y1="20" x2="18.92" y2="18" width="1" layer="1"/>
+<wire x1="18.92" y1="18" x2="18.92" y2="11" width="1" layer="1"/>
+<contactref element="X1" pad="2"/>
+<wire x1="4.365" y1="20" x2="18.92" y2="11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2" class="1">
-<contactref element="CON1" pad="P$3"/>
 <contactref element="R1" pad="2"/>
 <contactref element="C1" pad="1"/>
-<wire x1="18" y1="22.8" x2="13.95" y2="26.85" width="1" layer="1"/>
-<wire x1="13" y1="26.85" x2="13.95" y2="26.85" width="1" layer="1"/>
-<wire x1="18" y1="22.8" x2="21.46" y2="22.8" width="1" layer="1"/>
+<wire x1="19.46" y1="27.8" x2="13.95" y2="27.8" width="1" layer="1"/>
 <contactref element="L1" pad="4"/>
-<wire x1="34.85" y1="23.5" x2="29.08" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="21.46" y1="22.8" x2="29.08" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="19.46" y1="27.8" x2="19.46" y2="22.54" width="1" layer="16"/>
+<wire x1="24" y1="18" x2="29.08" y2="18" width="1" layer="16"/>
+<wire x1="19.46" y1="22.54" x2="24" y2="18" width="1" layer="16"/>
+<wire x1="34.85" y1="16.5" x2="30.58" y2="16.5" width="1" layer="16"/>
+<wire x1="30.58" y1="16.5" x2="29.08" y2="18" width="1" layer="16"/>
+<contactref element="X1" pad="3"/>
+<wire x1="4.365" y1="14.92" x2="29.08" y2="18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="F1" pad="2"/>
@@ -2050,9 +2132,12 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <wire x1="22.5" y1="4" x2="29.5" y2="4" width="1" layer="1"/>
 <contactref element="L1" pad="1"/>
-<wire x1="29.08" y1="13" x2="34.85" y2="10.5" width="0" layer="19" extent="1-1"/>
-<wire x1="26.54" y1="17.2" x2="29.08" y2="13" width="0" layer="19" extent="1-1"/>
-<wire x1="29.5" y1="4" x2="34.85" y2="10.5" width="0" layer="19" extent="1-1"/>
+<wire x1="24.54" y1="22.2" x2="24.54" y2="15.54" width="1" layer="1"/>
+<wire x1="24.54" y1="15.54" x2="29.08" y2="11" width="1" layer="1"/>
+<wire x1="29.5" y1="4" x2="29.5" y2="10.58" width="1" layer="1"/>
+<wire x1="29.5" y1="10.58" x2="29.08" y2="11" width="1" layer="1"/>
+<wire x1="34.85" y1="3.5" x2="30" y2="3.5" width="1" layer="1"/>
+<wire x1="30" y1="3.5" x2="29.5" y2="4" width="1" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -2088,6 +2173,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
